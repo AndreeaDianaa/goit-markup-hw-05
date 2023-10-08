@@ -60,7 +60,9 @@
     <main>
       <div class="container-main">
         <h1 class="main-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button class="main-button" type="button">Request our service</button>
+        <button data-modal-open class="main-button" type="button">
+          Request our service
+        </button>
       </div>
       <div class="container">
         <!--Details about our services-->
@@ -130,6 +132,7 @@
               />
             </li>
             <li>
+              <h3 class="heading-services-light">Mobile APPS</h3>
               <img
                 src="images/image-2-phone-laptop.jpg"
                 alt="A person working, checking something on both a phone and a laptop"
@@ -138,6 +141,7 @@
               />
             </li>
             <li>
+              <h3 class="heading-services-light">DESIGN SOLUTIONS</h3>
               <img
                 src="images/image-3-tablet.jpg"
                 alt="A person holding a tablet in his hand"
@@ -431,5 +435,23 @@
         </ul>
       </div>
     </footer>
+
+    <!--  <button data-modal-open="myModalBtn">Request our service</button>
+
+    <div class="modal is-hidden" data-modal="myModal">
+      <div class="modal-content">
+        <h2>Titlu Fereastră Modală</h2>
+        <p>Aici este conținutul ferestrei modale.</p>
+        <button data-modal-close="myModal">&times</button>
+      </div>
+    </div>-->
+
+    <div class="modal" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close="">&times;</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
